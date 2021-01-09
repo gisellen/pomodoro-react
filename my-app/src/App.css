@@ -38,10 +38,22 @@ h2{
 
 .interval-buttons{
   display: flex;
+  padding: 0px 20px;
 }
 
+.btn-outline-dark{
+  border-color:transparent;
+  font-size: 20px;
+}
 .time-text{
   font-size: 50px;
+}
+
+.minute-text{
+  display:flex;
+  align-items: center;
+  font-size: 30px;
+  margin: 0px 40px;
 }
 
 button{

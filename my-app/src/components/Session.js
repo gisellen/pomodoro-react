@@ -23,9 +23,9 @@ function Session(props){
                 <p>Session Minutes</p>
             </section>
             <section className="interval-buttons">
-                 <Button onClick={decreaseSession} variant="outline-dark">Down</Button>{' '}
-            <p>{props.sessionInterval}</p>
-            <Button onClick={increaseSession} variant="outline-dark">Up</Button>{' '}
+                 <Button onClick={decreaseSession} variant="outline-dark">-</Button>{' '}
+            <p className="minute-text">{props.sessionInterval}</p>
+            <Button onClick={increaseSession} variant="outline-dark">+</Button>{' '}
             </section>
         </section>
 

@@ -24,9 +24,9 @@ function Break(props){
             <p>Break Minutes</p>
             </section>
             <section className="interval-buttons">
-            <Button onClick={decreaseBreak} variant="outline-dark">Down</Button>{' '}
-            <p>{props.breakInterval}</p>
-            <Button onClick={increaseBreak}  variant="outline-dark">Up</Button>{' '}
+            <Button onClick={decreaseBreak} variant="outline-dark">-</Button>{' '}
+            <p className="minute-text">{props.breakInterval}</p>
+            <Button onClick={increaseBreak}  variant="outline-dark">+</Button>{' '}
             </section>
         </section>
     );
