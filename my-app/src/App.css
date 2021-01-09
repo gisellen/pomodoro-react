@@ -1,0 +1,19 @@
+main{
+  display:flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+.interval-container{
+  display: flex;
+}
+
+.time-container{
+  display: flex;
+}
