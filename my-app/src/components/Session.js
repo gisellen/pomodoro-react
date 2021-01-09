@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button'
 
 function Session(props){
     function decreaseSession(){
@@ -18,9 +19,14 @@ function Session(props){
     }
     return(
         <section className="interval-container">
-            <button onClick={decreaseSession}>Down</button>
+            <section>
+                <p>Session Minutes</p>
+            </section>
+            <section className="interval-buttons">
+                 <Button onClick={decreaseSession} variant="outline-dark">Down</Button>{' '}
             <p>{props.sessionInterval}</p>
-            <button onClick={increaseSession}> Up</button>
+            <Button onClick={increaseSession} variant="outline-dark">Up</Button>{' '}
+            </section>
         </section>
 
     );

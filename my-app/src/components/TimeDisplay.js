@@ -1,4 +1,5 @@
 import React from "react";
+import Button from 'react-bootstrap/Button'
 
 class TimeDisplay extends React.Component {
   constructor() {
@@ -70,22 +71,22 @@ class TimeDisplay extends React.Component {
   }
   render() {
     return (
-      <section>
+      <section className="time-display">
         <section>
           <h4>{this.state.isSession === true ? "Session" : "Break"}</h4>
-          <span>
+        </section>
+        <section className="time-text">
             {this.props.timeMinute}:
             {this.state.timeSecond === 0
               ? "00"
               : this.state.timeSecond < 10
               ? "0" + this.state.timeSecond
               : this.state.timeSecond}
-          </span>
-        </section>
+          </section>
         <section className="time-buttons">
-          <button onClick={this.play}> Play </button>
-          <button onClick={this.stop}> Stop </button>
-          <button onClick={this.refresh}> Refresh </button>
+          <Button onClick={this.play} variant="outline-dark"> Play </Button>
+          <Button onClick={this.stop} variant="outline-dark"> Stop </Button>
+          <Button onClick={this.refresh} variant="outline-dark"> Refresh </Button>
         </section>
       </section>
     );
